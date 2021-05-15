@@ -1,76 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Coffeeroasters subscription site</title>
-</head>
-<body>
-  Home
-  About us
-  Create your plan
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Frontend Mentor | Coffeeroasters subscription site</title>
+	</head>
+	<body>
+		<header class="showcase">
+			<div class="container">
+				<nav>
+					<img src="assets/shared/desktop/logo.svg" alt="coffeeroasters logo" />
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/about.html">About us</a></li>
+						<li><a href="/plan.html">Create your plan</a></li>
+					</ul>
+				</nav>
 
-  Great coffee made simple.
+				<div class="header__hero">
+					<div class="header__hero--mainText">
+						<h1>Great coffee made simple.</h1>
+						<p>
+							Start your mornings with the world’s best coffees. Try our
+							expertly curated artisan coffees from our best roasters delivered
+							directly to your door, at your schedule.
+						</p>
+						<button class="header__hero--button" href="/plan.html">
+							Create your plan
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
 
-  Start your mornings with the world’s best coffees. Try our expertly curated artisan 
-  coffees from our best roasters delivered directly to your door, at your schedule.
+		<section class="our__collection">
+			<div class="our__collection--title">
+				<h1>our collection</h1>
+			</div>
+			<div class="our__coffee-card">
+				<img
+					src="/assets/home/desktop/image-gran-espresso.png"
+					alt="Gran Espresso Image"
+				/>
+				<h3>Gran Espresso</h3>
+				<p>
+					Light and flavorful blend with cocoa and black pepper for an intense
+					experience
+				</p>
+			</div>
 
-  Create your plan
+			<div class="our__coffee-card">
+				<img
+					src="/assets/home/desktop/image-planalto.png"
+					alt="Gran Espresso Image"
+				/>
+				<h3>Planalto</h3>
+				<p>
+					Brazilian dark roast with rich and velvety body, and hints of fruits
+					and nuts
+				</p>
+			</div>
 
-  Our collection
+			<div class="our__coffee-card">
+				<img
+					src="/assets/home/desktop/image-piccollo.png"
+					alt="Gran Espresso Image"
+				/>
+				<h3>Piccollo</h3>
+				<p>
+					Mild and smooth blend featuring notes of toasted almond and dried
+					cherry
+				</p>
+			</div>
 
-  Gran Espresso
-  Light and flavorful blend with cocoa and black pepper for an intense experience
+			<div class="our__coffee-card">
+				<img
+					src="/assets/home/desktop/image-gran-espresso.png"
+					alt="Gran Espresso Image"
+				/>
+				<h3>Danche</h3>
+				<p>
+					Ethiopian hand-harvested blend densely packed with vibrant fruit notes
+				</p>
+			</div>
+		</section>
 
-  Planalto
-  Brazilian dark roast with rich and velvety body, and hints of fruits and nuts
+		<section class="why__choose-us">
+			<div class="why__choose-us-heading">
+				<h1>Why choose us?</h1>
+				<p>
+					A large part of our role is choosing which particular coffees will be
+					featured in our range. This means working closely with the best coffee
+					growers to give you a more impactful experience on every level.
+				</p>
+			</div>
+			<div class="why__choose-us--card-section">
+				<div class="why__choose-us-card">
+					<img
+						src="/assets/home/desktop/icon-coffee-bean.svg"
+						alt="Coffee Bean"
+					/>
+					<div class="why__choose-us-card--body">
+						<h2>Best quality</h2>
+						<p>
+							Discover an endless variety of the world’s best artisan coffee
+							from each of our roasters.
+						</p>
+					</div>
+				</div>
 
-  Piccollo
-  Mild and smooth blend featuring notes of toasted almond and dried cherry
+				<div class="why__choose-us-card">
+					<img src="/assets/home/desktop/icon-gift.svg" alt="Gift Icon" />
+					<div class="why__choose-us-card--body">
+						<h2>Exclusive benefits</h2>
+						<p>
+							Special offers and swag when you subscribe, including 30% off your
+							first shipment.
+						</p>
+					</div>
+				</div>
 
-  Danche
-  Ethiopian hand-harvested blend densely packed with vibrant fruit notes
+				<div class="why__choose-us-card">
+					<img src="/assets/home/desktop/icon-truck.svg" alt="Shipping Truck" />
+					<div class="why__choose-us-card--body">
+						<h2>Free shipping</h2>
+						<p>
+							We cover the cost and coffee is delivered fast. Peak freshness:
+							guaranteed.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  Why choose us?
+		<section class="how__it-works--section">
+			<div class="how__it-works">
+				<h3>How it works</h3>
+			</div>
 
-  A large part of our role is choosing which particular coffees will be featured 
-  in our range. This means working closely with the best coffee growers to give 
-  you a more impactful experience on every level.
+			<div class="how__it-works-card--section">
+				<div class="how__it-works--card">
+					<span>01</span>
+					<h2>Pick your coffee</h2>
+					<p>
+						Select from our evolving range of artisan coffees. Our beans are
+						ethically sourced and we pay fair prices for them. There are new
+						coffees in all profiles every month for you to try out.
+					</p>
+				</div>
 
-  Best quality
-  Discover an endless variety of the world’s best artisan coffee from each of our roasters.
+				<div class="how__it-works--card">
+					<span>02</span>
+					<h2>Choose the frequency</h2>
+					<p>
+						Customize your order frequency, quantity, even your roast style and
+						grind type. Pause, skip or cancel your subscription with no
+						commitment through our online portal.
+					</p>
+				</div>
 
-  Exclusive benefits
-  Special offers and swag when you subscribe, including 30% off your first shipment.
+				<div class="how__it-works--card">
+					<span>03</span>
+					<h2>Receive and enjoy!</h2>
+					<p>
+						We ship your package within 48 hours, freshly roasted. Sit back and
+						enjoy award-winning world-class coffees curated to provide a
+						distinct tasting experience.
+					</p>
+				</div>
+			</div>
+			<button class="how__it-works--button" href="/plan.html">
+				Create your plan
+			</button>
+		</section>
 
-  Free shipping 
-  We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
+		<footer>
+			<div class="footer__logo--links">
+				<img
+					id="footer-logo"
+					src="assets/shared/desktop/logo.svg"
+					alt="coffeeroasters logo"
+				/>
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/about.html">About us</a></li>
+					<li><a href="/plan.html">Create your plan</a></li>
+				</ul>
+			</div>
 
-  How it works
-
-  01
-  Pick your coffee
-  Select from our evolving range of artisan coffees. Our beans are ethically 
-  sourced and we pay fair prices for them. There are new coffees in all profiles 
-  every month for you to try out.
-
-  02
-  Choose the frequency
-  Customize your order frequency, quantity, even your roast style and grind type. 
-  Pause, skip or cancel your subscription with no commitment through our online portal.
-
-  03
-  Receive and enjoy!
-  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
-  world-class coffees curated to provide a distinct tasting experience.
-
-  Create your plan
-
-  Home
-  About us
-  Create your plan
-</body>
+			<div class="footer_social-media">
+				<ul>
+					<li>
+						<a href="#"
+							><img
+								src="/assets/shared/desktop/icon-facebook.svg"
+								alt="Facebook icon"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="/assets/shared/desktop/icon-twitter.svg"
+								alt="Twitter icon"
+						/></a>
+					</li>
+					<li>
+						<img
+							src="/assets/shared/desktop/icon-instagram.svg"
+							alt="Instagram icon"
+						/>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
 </html>
+
+<!--      
+02   03 Receive and enjoy!  Create your plan
+Home About us Create your plan -->
