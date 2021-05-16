@@ -1,4 +1,5 @@
 $text-color-dark: #333d4b;
+$text-color-light: #83888f;
 $text-color-white: #fefcf7;
 $how-it-works-span: #fdd6ba;
 $button-primary: #66d2cf;
@@ -43,6 +44,14 @@ a {
 		li {
 			padding: 10px;
 		}
+
+		a {
+			color: $text-color-light;
+		}
+
+		a:hover {
+			color: black;
+		}
 	}
 
 	.header__hero {
@@ -50,6 +59,7 @@ a {
 		background-image: url('https://bgorwin.github.io/coffee-subscription/assets/home/desktop/image-hero-coffeepress.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: cover;
 		height: 600px;
 		width: 1200px;
 		margin-bottom: 30px;
