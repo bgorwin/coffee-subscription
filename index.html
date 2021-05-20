@@ -5,15 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Frontend Mentor | Coffeeroasters subscription site</title>
 	</head>
 	<body>
-		<header class="showcase">
+		<header class="showcase ">
 			<div class="container">
 				<nav>
 					<img
@@ -27,7 +25,7 @@
 					</ul>
 				</nav>
 
-				<div class="header__hero">
+				<div class="header__hero container">
 					<div class="header__hero--mainText">
 						<h1>Great coffee made simple.</h1>
 						<p>
@@ -43,8 +41,8 @@
 			</div>
 		</header>
 
-		<section class="our__collection">
-			<div class="our__collection--title">
+		<section class="our__collection container">
+			<div class="our__collection--title container">
 				<h1>our collection</h1>
 			</div>
 			<div class="our__coffee-card">
@@ -52,11 +50,13 @@
 					src="https://bgorwin.github.io/coffee-subscription/assets/home/desktop/image-gran-espresso.png"
 					alt="Gran Espresso Image"
 				/>
-				<h3>Gran Espresso</h3>
-				<p>
-					Light and flavorful blend with cocoa and black pepper for an intense
-					experience
-				</p>
+				<div class="our__coffee-card-body">
+					<h3>Gran Espresso</h3>
+					<p>
+						Light and flavorful blend with cocoa and black pepper for an intense
+						experience
+					</p>
+				</div>
 			</div>
 
 			<div class="our__coffee-card">
@@ -64,11 +64,13 @@
 					src="https://bgorwin.github.io/coffee-subscription/assets/home/desktop/image-planalto.png"
 					alt="Gran Espresso Image"
 				/>
-				<h3>Planalto</h3>
-				<p>
-					Brazilian dark roast with rich and velvety body, and hints of fruits
-					and nuts
-				</p>
+				<div class="our__coffee-card-body">
+					<h3>Planalto</h3>
+					<p>
+						Brazilian dark roast with rich and velvety body, and hints of fruits
+						and nuts
+					</p>
+				</div>
 			</div>
 
 			<div class="our__coffee-card">
@@ -76,11 +78,13 @@
 					src="https://bgorwin.github.io/coffee-subscription/assets/home/desktop/image-piccollo.png"
 					alt="Gran Espresso Image"
 				/>
-				<h3>Piccollo</h3>
-				<p>
-					Mild and smooth blend featuring notes of toasted almond and dried
-					cherry
-				</p>
+				<div class="our__coffee-card-body">
+					<h3>Piccollo</h3>
+					<p>
+						Mild and smooth blend featuring notes of toasted almond and dried
+						cherry
+					</p>
+				</div>
 			</div>
 
 			<div class="our__coffee-card">
@@ -88,106 +92,111 @@
 					src="https://bgorwin.github.io/coffee-subscription/assets/home/desktop/image-gran-espresso.png"
 					alt="Gran Espresso Image"
 				/>
-				<h3>Danche</h3>
-				<p>
-					Ethiopian hand-harvested blend densely packed with vibrant fruit notes
-				</p>
+				<div class="our__coffee-card-body">
+					<h3>Danche</h3>
+					<p>
+						Ethiopian hand-harvested blend densely packed with vibrant fruit
+						notes
+					</p>
+				</div>
 			</div>
 		</section>
 
-		<section class="why__choose-us">
-			<div class="why__choose-us-heading">
-				<h1>Why choose us?</h1>
-				<p>
-					A large part of our role is choosing which particular coffees will be
-					featured in our range. This means working closely with the best coffee
-					growers to give you a more impactful experience on every level.
-				</p>
-			</div>
-			<div class="why__choose-us--card-section">
-				<div class="why__choose-us-card">
-					<img
+		<section class="why__choose-us container">
+			<div class="container">
+				<div class="why__choose-us-heading">
+					<h1>Why choose us?</h1>
+					<p>
+						A large part of our role is choosing which particular coffees will be
+						featured in our range. This means working closely with the best coffee
+						growers to give you a more impactful experience on every level.
+					</p>
+				</div>
+				<div class="why__choose-us--card-section container">
+					<div class="why__choose-us-card">
+						<img
 						src="https://bgorwin.github.io/coffee-subscription/assets/home/desktop/icon-coffee-bean.svg"
 						alt="Coffee Bean"
-					/>
-					<div class="why__choose-us-card--body">
+						/>
+						<div class="why__choose-us-card--body">
 						<h2>Best quality</h2>
 						<p>
 							Discover an endless variety of the world’s best artisan coffee
 							from each of our roasters.
 						</p>
+						</div>
 					</div>
-				</div>
-
-				<div class="why__choose-us-card">
-					<img
+			
+					<div class="why__choose-us-card">
+						<img
 						src="https://bgorwin.github.io/coffee-subscription/assets/home/desktop/icon-gift.svg"
 						alt="Gift Icon"
-					/>
-					<div class="why__choose-us-card--body">
+						/>
+						<div class="why__choose-us-card--body">
 						<h2>Exclusive benefits</h2>
 						<p>
 							Special offers and swag when you subscribe, including 30% off your
 							first shipment.
 						</p>
+						</div>
 					</div>
-				</div>
-
-				<div class="why__choose-us-card">
-					<img
+			
+					<div class="why__choose-us-card">
+						<img
 						src="https://bgorwin.github.io/coffee-subscription/assets/home/desktop/icon-truck.svg"
 						alt="Shipping Truck"
-					/>
-					<div class="why__choose-us-card--body">
+						/>
+						<div class="why__choose-us-card--body">
 						<h2>Free shipping</h2>
 						<p>
 							We cover the cost and coffee is delivered fast. Peak freshness:
 							guaranteed.
 						</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section class="how__it-works--section">
-			<div class="how__it-works">
-				<h3>How it works</h3>
-			</div>
-
-			<div class="how__it-works-card--section">
-				<div class="how__it-works--card">
-					<span>01</span>
-					<h2>Pick your coffee</h2>
-					<p>
+				</section>
+			
+				<section class="how__it-works--section container">
+					<div class="how__it-works">
+					<h3>How it works</h3>
+					</div>
+			
+					<div class="how__it-works-card--section">
+					<div class="how__it-works--card">
+						<span>01</span>
+						<h2>Pick your coffee</h2>
+						<p>
 						Select from our evolving range of artisan coffees. Our beans are
 						ethically sourced and we pay fair prices for them. There are new
 						coffees in all profiles every month for you to try out.
-					</p>
-				</div>
-
-				<div class="how__it-works--card">
-					<span>02</span>
-					<h2>Choose the frequency</h2>
-					<p>
+						</p>
+					</div>
+			
+					<div class="how__it-works--card">
+						<span>02</span>
+						<h2>Choose the frequency</h2>
+						<p>
 						Customize your order frequency, quantity, even your roast style and
 						grind type. Pause, skip or cancel your subscription with no
 						commitment through our online portal.
-					</p>
-				</div>
-
-				<div class="how__it-works--card">
-					<span>03</span>
-					<h2>Receive and enjoy!</h2>
-					<p>
+						</p>
+					</div>
+			
+					<div class="how__it-works--card">
+						<span>03</span>
+						<h2>Receive and enjoy!</h2>
+						<p>
 						We ship your package within 48 hours, freshly roasted. Sit back and
 						enjoy award-winning world-class coffees curated to provide a
 						distinct tasting experience.
-					</p>
-				</div>
+						</p>
+					</div>
+					</div>
+					<button class="how__it-works--button" href="/plan.html">
+					Create your plan
+					</button>
 			</div>
-			<button class="how__it-works--button" href="/plan.html">
-				Create your plan
-			</button>
 		</section>
 
 		<footer>

@@ -2,7 +2,8 @@ $text-color-dark: #333d4b;
 $text-color-light: #83888f;
 $text-color-white: #fefcf7;
 $how-it-works-span: #fdd6ba;
-$button-primary: #66d2cf;
+$button-primary: #0e8784;
+$button-secondary: #66d2cf;
 
 $background-color-dark: #2c343e;
 $background-color-blue: #0e8784;
@@ -13,7 +14,7 @@ $gradient: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Barlow', sans-serif;
 }
 
 a {
@@ -21,14 +22,14 @@ a {
 }
 
 .container {
-	max-width: 1200px;
+	width: 90%;
 	margin: 0 auto;
-	overflow: auto;
 }
 
 .showcase {
 	height: 600px;
-	margin-bottom: 200px;
+	width: auto;
+	margin-bottom: 30px;
 
 	nav {
 		display: flex;
@@ -55,13 +56,12 @@ a {
 	}
 
 	.header__hero {
-		position: absolute;
+		position: relative;
 		background-image: url('https://bgorwin.github.io/coffee-subscription/assets/home/desktop/image-hero-coffeepress.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: cover;
 		height: 600px;
-		width: 1200px;
+		width: auto;
 		margin-bottom: 30px;
 		border-radius: 3px;
 
@@ -112,17 +112,16 @@ a {
 // Our Collection Section, Home Page
 .our__collection {
 	display: flex;
-	flex-direction: row;
-	height: 380px;
-	width: 1111px;
+	flex-wrap: wrap;
+	height: 0 auto;
+	margin-bottom: 50px;
 	justify-content: center;
-	margin: 0 auto;
 
 	.our__collection--title {
 		position: relative;
-		top: -65px;
-		left: -100px;
-		width: 0px;
+		top: 90px;
+		left: 0;
+		width: auto;
 
 		h1 {
 			background: $gradient;
@@ -145,6 +144,9 @@ a {
 	}
 
 	.our__coffee-card {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
 		width: 230px;
 		height: 320px;
 		padding: 10px;
@@ -156,36 +158,40 @@ a {
 			background-position: center;
 			justify-content: center;
 			align-content: center;
-			height: 160px;
+
 			width: 245px;
 		}
 
-		h3 {
-			font-weight: lighter;
-			font-size: 18px;
-			margin-top: 20px;
-			text-align: center;
-		}
+		.our__coffee-card-body {
+			h3 {
+				font-weight: lighter;
+				font-size: 18px;
+				margin-top: 20px;
+				text-align: center;
+			}
 
-		p {
-			padding-top: 20px;
-			font-weight: lighter;
-			text-align: center;
-			font-size: 13px;
+			p {
+				padding-top: 20px;
+				font-weight: lighter;
+				text-align: center;
+				font-size: 13px;
+			}
 		}
 	}
 }
 
 .why__choose-us {
+	display: flex;
+
 	background-color: $background-color-dark;
-	width: 1200px;
+	width: auto;
 	height: 600px;
 	border-radius: 3px;
-	margin: 0 auto;
+	margin: 0 10%;
 
 	.why__choose-us-heading {
 		color: $text-color-white;
-		width: 540px;
+		max-width: 540px;
 		height: 176px;
 		justify-items: center;
 		text-align: center;
@@ -204,18 +210,20 @@ a {
 	}
 
 	.why__choose-us--card-section {
-		display: flex;
 		position: absolute;
-		width: 1100px;
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		max-width: 1100px;
 		margin: 0 auto;
 
 		.why__choose-us-card {
 			position: relative;
 			top: 140px;
-			left: 45px;
+			left: 0px;
 			background-color: $background-color-blue;
 			height: 382px;
-			width: 350px;
+			width: 320px;
 			margin: 10px;
 			border-radius: 5px;
 			justify-content: center;
@@ -259,6 +267,7 @@ a {
 
 	.how__it-works-card--section {
 		display: flex;
+		overflow: hidden;
 
 		.how__it-works--card {
 			width: 285px;
@@ -291,7 +300,7 @@ a {
 		left: 0;
 		font-size: 14px;
 		color: $text-color-white;
-		background-color: $button-primary;
+		background-color: $button-secondary;
 		padding: 15px 40px;
 		border-radius: 6px;
 		border: none;
@@ -364,4 +373,9 @@ footer {
 		justify-content: space-between;
 		margin: 15px 0;
 	}
+}
+
+// Tablet Media Query
+
+@media screen and (max-width: 780px) {
 }
