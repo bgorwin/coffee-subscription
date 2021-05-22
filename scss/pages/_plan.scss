@@ -1,0 +1,137 @@
+@import '../abstracts/utilities';
+
+.showcase {
+	height: 600px;
+	width: auto;
+	margin-bottom: 30px;
+
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 15px 0;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+		}
+
+		li {
+			padding: 10px;
+		}
+
+		a {
+			color: $text-color-light;
+		}
+
+		a:hover {
+			color: black;
+		}
+	}
+
+	.header__plan {
+		position: relative;
+		background-image: url('https://bgorwin.github.io/coffee-subscription/assets/plan/desktop/image-hero-blackcup.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 450px;
+		width: auto;
+		margin-bottom: 30px;
+		border-radius: 3px;
+
+		.header__plan--mainText {
+			position: relative;
+			top: 115px;
+			left: 50px;
+			justify-content: center;
+			height: 367px;
+			max-width: 445px;
+
+			h1 {
+				font-family: sans-serif;
+				font-weight: 300;
+				font-size: 70px;
+				color: $text-color-white;
+			}
+
+			p {
+				font-family: sans-serif;
+				font-weight: 300;
+				line-height: center;
+				word-spacing: 1.5px;
+				padding-top: 35px;
+				font-size: 15px;
+				color: $text-color-white;
+			}
+
+			button {
+				position: relative;
+				top: 65px;
+				left: 0;
+				font-size: 14px;
+				color: $text-color-white;
+				background-color: $button-primary;
+				padding: 15px 40px;
+				border-radius: 6px;
+				border: none;
+			}
+		}
+	}
+
+	a {
+		color: $text-color-dark;
+	}
+}
+
+.plan__how__it-works--section {
+	height: 380px;
+	width: 1111px;
+	justify-content: center;
+	margin: 250px auto;
+
+	.plan__how__it-works-card--section {
+		display: flex;
+		overflow: hidden;
+
+		.plan__how__it-works--card {
+			width: 285px;
+			height: 345px;
+
+			margin: 30px 85px 30px 0px;
+
+			span {
+				font-size: 72px;
+				color: $how-it-works-span;
+			}
+
+			h2 {
+				color: $background-color-dark;
+				width: 170px;
+				font-size: 32px;
+				margin: 40px 0px;
+			}
+
+			p {
+				color: $text-color-dark;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.plan__how__it-works--button {
+		position: relative;
+		top: 65px;
+		left: 0;
+		font-size: 14px;
+		color: $text-color-white;
+		background-color: $button-secondary;
+		padding: 15px 40px;
+		border-radius: 6px;
+		border: none;
+	}
+
+	.plan__how__it-works {
+		flex: row;
+	}
+}
