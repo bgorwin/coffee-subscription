@@ -1,0 +1,352 @@
+.showcase {
+	height: 600px;
+	width: auto;
+	margin-bottom: 30px;
+
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 15px 0;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+		}
+
+		li {
+			padding: 10px;
+		}
+
+		a {
+			color: $text-color-light;
+		}
+
+		a:hover {
+			color: black;
+		}
+	}
+
+	.header__hero {
+		position: relative;
+		background-image: url('https://bgorwin.github.io/coffee-subscription/assets/home/desktop/image-hero-coffeepress.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 600px;
+		width: auto;
+		margin-bottom: 30px;
+		border-radius: 3px;
+
+		.header__hero--mainText {
+			position: relative;
+			top: 115px;
+			left: 50px;
+			justify-content: center;
+			height: 367px;
+			max-width: 445px;
+
+			h1 {
+				font-family: sans-serif;
+				font-weight: 300;
+				font-size: 70px;
+				color: $text-color-white;
+			}
+
+			p {
+				font-family: sans-serif;
+				font-weight: 300;
+				line-height: center;
+				word-spacing: 1.5px;
+				padding-top: 35px;
+				font-size: 15px;
+				color: $text-color-white;
+			}
+
+			button {
+				position: relative;
+				top: 65px;
+				left: 0;
+				font-size: 14px;
+				color: $text-color-white;
+				background-color: $button-primary;
+				padding: 15px 40px;
+				border-radius: 6px;
+				border: none;
+			}
+		}
+	}
+
+	a {
+		color: $text-color-dark;
+	}
+}
+
+// Our Collection Section, Home Page
+.our__collection {
+	display: flex;
+	flex-wrap: wrap;
+	height: 0 auto;
+	margin-bottom: 50px;
+	justify-content: center;
+
+	.our__collection--title {
+		position: relative;
+		top: 90px;
+		left: 0;
+		width: auto;
+
+		h1 {
+			background: $gradient;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			display: inline-block;
+			text-align: center;
+			width: 1165px;
+			font-weight: normal;
+			font-size: 115px;
+
+			background-image: linear-gradient(
+				to top,
+				#c4c5c7 0%,
+				#dcdddf 52%,
+				#ebebeb 100%
+			);
+		}
+	}
+
+	.our__coffee-card {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		width: 230px;
+		height: 320px;
+		padding: 10px;
+		margin: 0 5px 0 5px;
+		z-index: 2;
+
+		img {
+			background-repeat: no-repeat;
+			background-position: center;
+			justify-content: center;
+			align-content: center;
+
+			width: 245px;
+		}
+
+		.our__coffee-card-body {
+			h3 {
+				font-weight: lighter;
+				font-size: 18px;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			p {
+				padding-top: 20px;
+				font-weight: lighter;
+				text-align: center;
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+.why__choose-us {
+	display: flex;
+	background-color: $background-color-dark;
+	width: auto;
+	height: 600px;
+	border-radius: 3px;
+	margin: 0 10%;
+
+	.why__choose-us-heading {
+		color: $text-color-white;
+		max-width: 540px;
+		height: 176px;
+		justify-items: center;
+		text-align: center;
+		margin: 0 auto;
+		padding: 85px 50px;
+	}
+
+	h1 {
+		font-size: 40px;
+		margin-bottom: 25px;
+	}
+
+	p {
+		font-weight: lighter;
+		font-size: 16px;
+	}
+
+	.why__choose-us--card-section {
+		position: absolute;
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		max-width: 1100px;
+		margin: 0 auto;
+
+		.why__choose-us-card {
+			position: relative;
+			top: 140px;
+			left: 0px;
+			background-color: $background-color-blue;
+			height: 382px;
+			width: 320px;
+			margin: 10px;
+			border-radius: 5px;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0 auto;
+				padding: 80px 10px;
+			}
+
+			.why__choose-us-card--body {
+				width: 255px;
+				height: 124px;
+				align-items: center;
+				justify-content: center;
+				color: $text-color-white;
+				margin: 0 auto;
+
+				h2 {
+					text-align: center;
+					margin-bottom: 24px;
+				}
+
+				p {
+					text-align: center;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+.how__it-works--section {
+	height: 380px;
+	width: 1111px;
+	justify-content: center;
+	margin: 250px auto;
+
+	.how__it-works-card--section {
+		display: flex;
+		overflow: hidden;
+
+		.how__it-works--card {
+			width: 285px;
+			height: 345px;
+
+			margin: 30px 85px 30px 0px;
+
+			span {
+				font-size: 72px;
+				color: $how-it-works-span;
+			}
+
+			h2 {
+				color: $background-color-dark;
+				width: 170px;
+				font-size: 32px;
+				margin: 40px 0px;
+			}
+
+			p {
+				color: $text-color-dark;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.how__it-works--button {
+		position: relative;
+		top: 65px;
+		left: 0;
+		font-size: 14px;
+		color: $text-color-white;
+		background-color: $button-secondary;
+		padding: 15px 40px;
+		border-radius: 6px;
+		border: none;
+	}
+
+	.how__it-works {
+		flex: row;
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	width: 1280px;
+	height: 120px;
+	background-color: $background-color-dark;
+	margin: 0 60px;
+
+	.footer__logo--links {
+		display: flex;
+		align-items: center;
+		margin: 5%;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+			list-style-type: none;
+
+			li {
+				padding: 10px;
+			}
+
+			a {
+				text-decoration: none;
+				color: $text-color-white;
+			}
+		}
+	}
+
+	.footer_social-media {
+		display: flex;
+		align-items: center;
+		margin: 0 5%;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+			list-style-type: none;
+
+			li {
+				padding: 10px;
+			}
+
+			a {
+				text-decoration: none;
+				color: $text-color-white;
+			}
+		}
+	}
+
+	#footer-logo {
+		width: 280px;
+		height: 50px;
+		padding: 10px;
+	}
+
+	img {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 15px 0;
+	}
+}
+
+// Tablet Media Query
+
+@media screen and (max-width: 780px) {
+}

@@ -1,0 +1,200 @@
+@import '../abstracts/utilities';
+
+.about__showcase {
+	height: 600px;
+	width: auto;
+	margin-bottom: 30px;
+
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 15px 0;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+		}
+
+		li {
+			padding: 10px;
+		}
+
+		a {
+			color: $text-color-light;
+		}
+
+		a:hover {
+			color: black;
+		}
+	}
+
+	.header__about {
+		position: relative;
+		background-image: url('https://bgorwin.github.io/coffee-subscription/assets/about/desktop/image-hero-whitecup.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 450px;
+		width: auto;
+		margin-bottom: 30px;
+		border-radius: 3px;
+
+		.header__about--mainText {
+			position: relative;
+			top: 115px;
+			left: 50px;
+			justify-content: center;
+			height: 367px;
+			max-width: 445px;
+
+			h1 {
+				font-family: sans-serif;
+				font-weight: 300;
+				font-size: 70px;
+				color: $text-color-white;
+			}
+
+			p {
+				font-family: sans-serif;
+				font-weight: 300;
+				line-height: center;
+				word-spacing: 1.5px;
+				padding-top: 35px;
+				font-size: 15px;
+				color: $text-color-white;
+			}
+
+			button {
+				position: relative;
+				top: 65px;
+				left: 0;
+				font-size: 14px;
+				color: $text-color-white;
+				background-color: $button-primary;
+				padding: 15px 40px;
+				border-radius: 6px;
+				border: none;
+			}
+		}
+	}
+
+	a {
+		color: $text-color-dark;
+	}
+}
+
+.about__commitment-section {
+	display: flex;
+	max-width: 1110px;
+	height: auto;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+
+	.about__commitment-photo {
+		img {
+			border-radius: 3px;
+		}
+	}
+
+	.about__commitment-paragraph {
+		width: 540px;
+		padding: 15px;
+		justify-content: space-between;
+
+		h1 {
+			font-family: $primary-font;
+			font-weight: 300;
+			font-size: 40px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-family: $primary-font;
+			color: $text-color-light;
+			font-size: 16px;
+			font-weight: 300;
+		}
+	}
+}
+
+.about__uncomprosmising--background {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: $background-color-dark;
+	margin: 250px 0px 50px 0px;
+	height: auto;
+	border-radius: 3px;
+
+	.about__uncompromising-paragraph {
+		max-width: 540px;
+		color: $text-color-white;
+		margin: 0 auto;
+
+		h1 {
+			font-family: $primary-font;
+			font-size: 40px;
+			font-weight: 400;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-weight: 300;
+			color: $text-color-white;
+		}
+	}
+
+	.about__uncompromising--image {
+		img {
+			position: relative;
+			top: -102px;
+			right: 100px;
+		}
+	}
+}
+
+.about__headquarters {
+	.about__headquarters-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-bottom: 200px;
+		.about__headquarters-title {
+			width: 100%;
+			height: 100px;
+			margin-top: 50px;
+		}
+
+		.about__headquarters-card {
+			width: 285px;
+			height: 157px;
+
+			img {
+				width: 40.84px;
+				height: 49.07px;
+				margin-bottom: 50px;
+			}
+
+			.about__card-title-box {
+				width: 285px;
+				height: 97px;
+
+				h1 {
+					font-size: 32px;
+					margin-bottom: 25px;
+				}
+
+				p {
+					font-weight: 300;
+					font-size: 16px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

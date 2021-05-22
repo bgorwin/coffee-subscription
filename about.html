@@ -1,64 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Frontend Mentor | Coffeeroasters subscription site</title>
+	</head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+	<body>
+		<header class="about__showcase">
+			<div class="container">
+				<nav>
+					<img
+						src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/logo.svg"
+						alt="coffeeroasters logo"
+					/>
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/about.html">About us</a></li>
+						<li><a href="/plan.html">Create your plan</a></li>
+					</ul>
+				</nav>
 
-  <title>Frontend Mentor | Coffeeroasters subscription site</title>
-</head>
+				<div class="header__about container">
+					<div class="header__about--mainText">
+						<h1>About us</h1>
+						<p>
+							Coffeeroasters began its journey of exotic discovery in 1999,
+							highlighting stories of coffee from around the world. We have
+							since been dedicated to bring the perfect cup - from bean to brew
+							- in every shipment.
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
 
-<body>
-  Home
-  About us
-  Create your plan
+		<section class="container">
+			<div class="about__commitment-section">
+				<div class="about__commitment-photo">
+					<img
+						src="./assets/about/desktop/image-commitment.jpg"
+						alt="Barista latte pour"
+					/>
+				</div>
+				<div class="about__commitment-paragraph">
+					<h1>Our commitment</h1>
+					<p>
+						We’re built on a simple mission and a commitment to doing good along
+						the way. We want to make it easy for you to discover and brew the
+						world’s best coffee at home. It all starts at the source. To locate
+						the specific lots we want to purchase, we travel nearly 60 days a
+						year trying to understand the challenges and opportunities in each
+						of these places. We collaborate with exceptional coffee growers and
+						empower a global community of farmers through with well above
+						fair-trade benchmarks. We also offer training, support farm
+						community initiatives, and invest in coffee plant science. Curating
+						only the finest blends, we roast each lot to highlight tasting
+						profiles distinctive to their native growing region.
+					</p>
+				</div>
+			</div>
+		</section>
 
-  About us
-  Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of 
-  coffee from around the world. We have since been dedicated to bring the perfect cup - from 
-  bean to brew - in every shipment.
-  
-  Our commitment
-  We’re built on a simple mission and a commitment to doing good along the way. We want to 
-  make it easy for you to discover and brew the world’s best coffee at home. It all starts 
-  at the source. To locate the specific lots we want to purchase, we travel nearly 60 days 
-  a year trying to understand the challenges and opportunities in each of these places.
-  We collaborate with exceptional coffee growers and empower a global community of farmers 
-  through with well above fair-trade benchmarks. We also offer training, support farm community 
-  initiatives, and invest in coffee plant science. Curating only the finest blends, we roast 
-  each lot to highlight tasting profiles distinctive to their native growing region.
-  
-  Uncompromising quality
-  Although we work with growers who pay close attention to all stages of harvest and processing, 
-  we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the 
-  coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast 
-  consistent, user-friendly coffee, so that brewing is easy and enjoyable.
+		<section class="about__uncompromising container">
+			<div class="about__uncomprosmising--background">
+				<div class="about__uncompromising-paragraph">
+					<h1>Uncompromising quality</h1>
+					<p>
+						Although we work with growers who pay close attention to all stages
+						of harvest and processing, we employ, on our end, a rigorous quality
+						control program to avoid over-roasting or baking the coffee dry.
+						Every bag of coffee is tagged with a roast date and batch number.
+						Our goal is to roast consistent, user-friendly coffee, so that
+						brewing is easy and enjoyable.
+					</p>
+				</div>
+				<div class="about__uncompromising--image">
+					<img
+						src="./assets/about/desktop/image-quality.jpg"
+						alt="cup of coffee on table"
+					/>
+				</div>
+			</div>
+		</section>
 
-  Our headquarters
+		<section class="about__headquarters container">
+			<div class="about__headquarters-box container">
+				<p class="about__headquarters-title">Our Headquarters</p>
+				<div class="about__headquarters-card">
+					<img
+						src="./assets/about/desktop/illustration-uk.svg"
+						alt="United Kingdom icon"
+					/>
+					<div class="about__card-title-box">
+						<h1>United Kingdom</h1>
+						<p>68 Asfordby Rd</p>
+						<p>Alcaston</p>
+						<p>SY6 1YA</p>
+						<p>+44 1241 918425</p>
+					</div>
+				</div>
 
-  United Kingdom
-  68 Asfordby Rd
-  Alcaston
-  SY6 1YA
-  +44 1241 918425
+				<div class="about__headquarters-card">
+					<img
+						src="./assets/about/desktop/illustration-canada.svg"
+						alt="Canada icon"
+					/>
+					<div class="about__card-title-box">
+						<h1>Canada</h1>
+						<p>1528 Eglinton Avenue</p>
+						<p>Toronto</p>
+						<p>Ontario M4P 1A6</p>
+						<p>+1 416 485 2997</p>
+					</div>
+				</div>
 
-  Canada
-  1528 Eglinton Avenue
-  Toronto
-  Ontario M4P 1A6
-  +1 416 485 2997
+				<div class="about__headquarters-card">
+					<img
+						src="./assets/about/desktop/illustration-australia.svg"
+						alt="Australia icon"
+					/>
+					<div class="about__card-title-box">
+						<h1>Australia</h1>
+						<p>36 Swanston Street</p>
+						<p>Kewell</p>
+						<p>Victoria</p>
+						<p>+61 4 9928 3629</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  Australia
-  36 Swanston Street
-  Kewell
-  Victoria
-  +61 4 9928 3629
+		<footer class="container">
+			<div class="footer__logo--links">
+				<img
+					id="footer-logo"
+					src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/logo.svg"
+					alt="coffeeroasters logo"
+				/>
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/about.html">About us</a></li>
+					<li><a href="/plan.html">Create your plan</a></li>
+				</ul>
+			</div>
 
-  Home
-  About us
-  Create your plan
-</body>
-
+			<div class="footer_social-media">
+				<ul>
+					<li>
+						<a href="#"
+							><img
+								src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/icon-facebook.svg"
+								alt="Facebook icon"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/icon-twitter.svg"
+								alt="Twitter icon"
+						/></a>
+					</li>
+					<li>
+						<img
+							src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/icon-instagram.svg"
+							alt="Instagram icon"
+						/>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
 </html>
