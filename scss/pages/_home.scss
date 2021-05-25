@@ -32,6 +32,7 @@
 		background-image: url('https://bgorwin.github.io/coffee-subscription/assets/home/desktop/image-hero-coffeepress.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: cover;
 		height: 600px;
 		width: auto;
 		margin-bottom: 30px;
@@ -85,13 +86,14 @@
 .our__collection {
 	display: flex;
 	flex-wrap: wrap;
-	height: 0 auto;
-	margin-bottom: 50px;
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
 	justify-content: center;
 
 	.our__collection--title {
 		position: relative;
-		top: 90px;
+		top: 70px;
 		left: 0;
 		width: auto;
 
@@ -102,7 +104,7 @@
 			-webkit-text-fill-color: transparent;
 			display: inline-block;
 			text-align: center;
-			width: 1165px;
+			width: 100%;
 			font-weight: normal;
 			font-size: 115px;
 
@@ -115,50 +117,56 @@
 		}
 	}
 
-	.our__coffee-card {
-		position: relative;
+	.out__collection-coffee-box {
 		display: flex;
 		flex-wrap: wrap;
-		width: 230px;
-		height: 320px;
-		padding: 10px;
-		margin: 0 5px 0 5px;
-		z-index: 2;
+		justify-content: center;
+		margin: 0 auto;
 
-		img {
-			background-repeat: no-repeat;
-			background-position: center;
-			justify-content: center;
-			align-content: center;
+		.our__coffee-card {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			width: 230px;
+			height: 320px;
+			padding: 10px;
+			margin: 0 5px 0 5px;
+			z-index: 2;
 
-			width: 245px;
-		}
+			img {
+				background-repeat: no-repeat;
+				background-position: center;
+				justify-content: center;
+				align-content: center;
 
-		.our__coffee-card-body {
-			h3 {
-				font-weight: lighter;
-				font-size: 18px;
-				margin-top: 20px;
-				text-align: center;
+				width: 245px;
 			}
 
-			p {
-				padding-top: 20px;
-				font-weight: lighter;
-				text-align: center;
-				font-size: 13px;
+			.our__coffee-card-body {
+				h3 {
+					font-weight: lighter;
+					font-size: 18px;
+					margin-top: 20px;
+					text-align: center;
+				}
+
+				p {
+					padding-top: 20px;
+					font-weight: lighter;
+					text-align: center;
+					font-size: 13px;
+				}
 			}
 		}
 	}
 }
 
 .why__choose-us {
-	display: flex;
 	background-color: $background-color-dark;
 	width: auto;
-	height: 600px;
+	height: auto;
 	border-radius: 3px;
-	margin: 0 10%;
+	margin: 30px 10%;
 
 	.why__choose-us-heading {
 		color: $text-color-white;
@@ -183,8 +191,8 @@
 	.why__choose-us--card-section {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
-		max-width: 1100px;
+		justify-content: center;
+		width: auto;
 		margin: 0 auto;
 
 		.why__choose-us-card {
@@ -192,8 +200,9 @@
 			top: 140px;
 			left: 0px;
 			background-color: $background-color-blue;
-			height: 382px;
-			width: 320px;
+			height: 385px;
+			width: 265px;
+
 			margin: 10px;
 			border-radius: 5px;
 			justify-content: center;
@@ -222,6 +231,7 @@
 
 				p {
 					text-align: center;
+					padding: 10px;
 					font-size: 16px;
 				}
 			}
@@ -230,21 +240,37 @@
 }
 
 .how__it-works--section {
-	height: 850px;
-	width: 1111px;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+	margin: 0 auto;
+	height: auto;
+	width: 1111px;
 	padding-top: 200px;
-	margin: 250px auto;
+	// margin: 250px auto;
+
+	// .how__it-works {
+	// 	margin-left: 4%;
+	// 	margin: 0 0 0 7%;
+	// }
 
 	.how__it-works-card--section {
 		display: flex;
-		overflow: hidden;
+		flex-wrap: wrap;
+		height: auto;
+		width: 100%;
+		margin: 50px auto;
+
+		.how__it-works-box {
+			justify-content: center;
+			margin: 0 auto;
+		}
 
 		.how__it-works--card {
-			width: 285px;
+			width: 265px;
 			height: 345px;
 
-			margin: 30px 85px 30px 0px;
+			margin: 30px 59px 30px 0px;
 
 			span {
 				font-size: 72px;
@@ -268,13 +294,14 @@
 	.how__it-works--button {
 		position: relative;
 		top: 65px;
-		left: 0;
+		left: 15px;
 		font-size: 14px;
 		color: $text-color-white;
 		background-color: $button-secondary;
 		padding: 15px 40px;
 		border-radius: 6px;
 		border: none;
+		margin-bottom: 200px;
 	}
 
 	.how__it-works {
