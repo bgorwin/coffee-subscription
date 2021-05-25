@@ -124,38 +124,45 @@
 }
 
 .about__uncomprosmising--background {
+	position: relative;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
+
 	background-color: $background-color-dark;
 	margin: 250px 0px 50px 0px;
 	height: auto;
 	border-radius: 3px;
 
 	.about__uncompromising-paragraph {
+		flex: 1;
 		max-width: 540px;
 		color: $text-color-white;
-		margin: 0 auto;
+		margin: 0 25px;
 
 		h1 {
 			font-family: $primary-font;
 			font-size: 40px;
 			font-weight: 400;
 			margin-bottom: 30px;
+			// width: 300px;
 		}
 
 		p {
+			// width: 300px;
 			font-weight: 300;
 			color: $text-color-white;
 		}
 	}
 
 	.about__uncompromising--image {
+		display: flex;
+		flex: 1;
+
 		img {
 			position: relative;
-			top: -102px;
-			right: 100px;
+			top: -100px;
+			right: -25px;
 		}
 	}
 }
@@ -202,4 +209,7 @@
 			}
 		}
 	}
+}
+
+@media screen and (min-width: 480px) {
 }
