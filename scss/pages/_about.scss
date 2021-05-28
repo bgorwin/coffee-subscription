@@ -86,10 +86,9 @@
 
 .about__commitment-section {
 	display: flex;
-
 	max-width: 1110px;
 
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 
 	margin: 0 auto;
@@ -106,6 +105,7 @@
 		width: 540px;
 		padding: 15px;
 		justify-content: space-between;
+		margin-left: 50px;
 
 		h1 {
 			font-family: $primary-font;
@@ -211,5 +211,81 @@
 	}
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 930px) {
+	.about__commitment-photo {
+		img {
+			max-width: 300px;
+			min-width: 250px;
+			height: 400px;
+		}
+	}
+
+	.about__commitment-paragraph {
+		p {
+			width: 300px;
+		}
+	}
+
+	.about__uncomprosmising--background {
+		flex-wrap: wrap;
+		justify-content: center;
+		.about__uncompromising--image {
+			justify-content: center;
+			top: -100px;
+			left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.header__about {
+		position: relative;
+
+		.header__about--mainText {
+			position: relative;
+			top: 115px;
+			left: 0 !important;
+			margin: 0 auto;
+
+			h1 {
+				text-align: center;
+				font-size: 28px;
+			}
+
+			p {
+				text-align: center;
+				line-height: 20px;
+				height: 140px;
+				margin: 0 20px;
+			}
+		}
+	}
+
+	.about__commitment-section {
+		display: flex;
+		flex-wrap: wrap;
+		width: auto;
+
+		.about__commitment-photo {
+			img {
+				max-width: 450px;
+				min-width: 350px;
+				height: 500px;
+			}
+		}
+
+		.about__commitment-paragraph {
+			margin: 0 auto;
+			width: 100%;
+
+			h1 {
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				width: auto;
+				margin: 0 auto;
+			}
+		}
+	}
 }
