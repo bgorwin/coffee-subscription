@@ -95,6 +95,7 @@
 
 	.about__commitment-photo {
 		img {
+			object-fit: cover;
 			max-width: 445px;
 			min-width: 281px;
 			border-radius: 3px;
@@ -160,9 +161,10 @@
 		flex: 1;
 
 		img {
+			max-width: 365px;
 			position: relative;
 			top: -100px;
-			right: -25px;
+			right: -20px;
 		}
 	}
 }
@@ -286,6 +288,17 @@
 				width: auto;
 				margin: 0 auto;
 			}
+		}
+	}
+
+	.about__uncompromising {
+		display: flex;
+		flex-direction: column;
+
+		.about__uncompromising--image img {
+			position: relative;
+			top: -100px;
+			left: 0px;
 		}
 	}
 }
