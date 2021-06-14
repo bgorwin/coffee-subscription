@@ -1,4 +1,5 @@
 @import '../abstracts/utilities';
+@import '../components/footer';
 
 .about__showcase {
 	height: 600px;
@@ -161,10 +162,11 @@
 		flex: 1;
 
 		img {
-			max-width: 365px;
+			width: 365px;
 			position: relative;
 			top: -100px;
 			right: -20px;
+			border-radius: 3px;
 		}
 	}
 }
@@ -175,12 +177,12 @@
 		flex-direction: row;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		padding-bottom: 200px;
 
 		.about__headquarters-title {
 			width: 100%;
 			height: 100px;
 			margin: 0 0 0 3%;
+			font-size: 24px;
 		}
 
 		.about__headquarters-card {
@@ -239,7 +241,7 @@
 	}
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 790px) {
 	.header__about {
 		position: relative;
 
@@ -295,10 +297,49 @@
 		display: flex;
 		flex-direction: column;
 
-		.about__uncompromising--image img {
-			position: relative;
-			top: -100px;
-			left: 0px;
+		.about__uncomprosmising--background {
+			display: flex;
+			flex-direction: column-reverse;
+
+			.about__uncompromising-paragraph {
+				padding-bottom: 45px;
+				text-align: center;
+			}
+
+			.about__uncompromising--image img {
+				position: relative;
+				width: auto;
+				top: -100px;
+				left: 0px;
+			}
+		}
+	}
+
+	.about__headquarters {
+		display: flex;
+
+		p {
+			text-align: center;
+			font-size: 24px;
+		}
+
+		.about__headquarters-box {
+			.about__headquarters-card {
+				p {
+					text-align: center;
+				}
+
+				h1 {
+					text-align: center;
+				}
+
+				.about__headquarters-card--img {
+					img {
+						width: 100%;
+						object-fit: contain;
+					}
+				}
+			}
 		}
 	}
 }
