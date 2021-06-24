@@ -134,32 +134,66 @@
 }
 
 @media screen and (max-width: 715px) {
+	.showcase {
+		position: relative;
+
+		.header__plan {
+			margin: 0 auto;
+
+			.header__plan--mainText {
+				top: 120px;
+				left: 0;
+				margin: 0 auto;
+				width: 80%;
+				height: 200px;
+
+				h1 {
+					font-weight: 400;
+					text-align: center;
+					font-size: 40px;
+				}
+
+				p {
+					font-size: 15px;
+					text-align: center;
+
+					line-height: 2.5;
+					height: auto;
+				}
+			}
+		}
+	}
+
 	.plan__how__it-works-card--section {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
+		padding: 50px 5px 0px 5px;
 
 		.plan__how__it-works--card {
 			margin: 0 auto;
 			flex-direction: column;
+			width: 400px;
+			height: 300px;
 
 			span {
-				margin: 100px;
+				margin: 40%;
 			}
 
 			h3 {
 				text-align: center;
 				width: 280px;
 				font-size: 28px;
-				margin: 15px auto;
+				margin: 5px auto;
 				padding: 10px 0px;
 			}
 
 			p {
 				font-size: 15px;
 				text-align: center;
+				line-height: 1.5;
 				margin: 0 auto;
-				padding: 20px 0px;
+				padding: 10px 0px;
 			}
 		}
 	}
