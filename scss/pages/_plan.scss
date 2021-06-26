@@ -88,18 +88,18 @@
 // Chose Your Coffee Block
 .plan__how__it-works-card--section {
 	display: flex;
-
 	width: 1280px;
 	height: auto;
 	background-color: $background-color-dark;
 	padding: 50px;
+	border-radius: 5px;
 
 	.plan__how__it-works--card {
 		flex-direction: column;
 		width: 285px;
 		height: 345px;
-
-		margin: 30px 60px 30px 0px;
+		padding: 0px 15px;
+		margin: 0 auto;
 
 		span {
 			font-size: 72px;
@@ -121,6 +121,76 @@
 		}
 	}
 }
+
+.plan__selection-section {
+	display: flex;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-top: 90px;
+
+	.selection__type-options {
+		flex-basis: 1;
+		width: 260px;
+		margin-left: 3%;
+		margin-right: 9%;
+		border-bottom: 1px solid $text-color-light;
+
+		p {
+			font-size: 24px;
+			font-weight: 300;
+			color: $text-color-light;
+			padding: 8px 0px 10px 0px;
+			border-bottom: 1px solid $text-color-light;
+			cursor: pointer;
+		}
+
+		p:hover {
+			color: $text-color-dark;
+		}
+
+		span {
+			font-size: 24px;
+			padding-right: 20px;
+		}
+	}
+
+	.plan__selection-dropdown-section {
+		width: 100%;
+
+		.selection__type-options-dropdown {
+			.selection__type-option {
+				h2 {
+					display: flex;
+					justify-content: space-between;
+					font-size: 40px;
+					font-weight: 400;
+					color: $text-color-light;
+				}
+
+				span {
+					img {
+						margin: 90% auto;
+					}
+				}
+
+				.selection__type-cards {
+					display: flex;
+					justify-content: space-between;
+					margin: 0 auto;
+
+					.selection__type-card {
+						background-color: $background-color-dark;
+						color: $text-color-white;
+						width: 228px;
+						height: 250px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Coffee Selection Section
 
 @media screen and (max-width: 930px) {
 	.plan__how__it-works-card--section {
