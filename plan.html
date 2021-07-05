@@ -4,6 +4,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css" />
+  <script src="./js/planOrderSummary.js"></script>
 
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
@@ -14,7 +15,7 @@
         <nav>
           <img
             src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/logo.svg"
-            alt="coffeeroasters logo"
+            alt="coffeeroasters logo" 
           />
           <ul>
             <li><a href="/index.html">Home</a></li>
@@ -83,16 +84,16 @@ artisan coffees from around the globe delivered fresh to your door.
           <div class="selection__type-option">
             <h2>How do you drink your coffee? <span><img src="/assets/plan/desktop/icon-arrow.svg" alt="Selection dropdown arrow"></span></h2>
             <div class="selection__type-cards">
-              <div class="selection__type-card">
+              <div class="selection__type-card"  onclick="capsuleSelected()">
                 <h3>Capsule</h3>
                 <p>Compatible with Nespresso systems and similar brewers</p>
               </div>
-              <div class="selection__type-card">
-                <h3>Filter</h3>
+              <div class="selection__type-card" onclick="filterSelected()">
+                <h3 >Filter</h3>
                 <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
               </div>
-              <div class="selection__type-card">
-                <h3>Espresso</h3>
+              <div class="selection__type-card" onclick="espressoSelected()">
+                <h3 >Espresso</h3>
                 <p>Dense and finely ground beans for an intense, flavorful experience</p>
               </div>
             </div>
@@ -103,15 +104,15 @@ artisan coffees from around the globe delivered fresh to your door.
           <div class="selection__type-option">
             <h2>What type of coffee?<span><img src="/assets/plan/desktop/icon-arrow.svg" alt="Selection dropdown arrow"></span></h2>
             <div class="selection__type-cards">
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="singleOriginSelected()">
                 <h3>Single origin</h3>
                 <p>Distinct, high quality coffee from a specific family-owned farm</p>
               </div>
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="decafSelected()">
                 <h3>Decaf</h3>
                 <p>Just like regular coffee, except the caffeine has been removed</p>
               </div>
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="blendedSelected()">
                 <h3>Blended</h3>
                 <p>Combination of two or three dark roasted beans of organic coffees</p>
               </div>
@@ -123,15 +124,15 @@ artisan coffees from around the globe delivered fresh to your door.
           <div class="selection__type-option">
             <h2>How much would you like?<span><img src="/assets/plan/desktop/icon-arrow.svg" alt="Selection dropdown arrow"></span></h2>
             <div class="selection__type-cards">
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="twoFiveZero()">
                 <h3>250g</h3>
                 <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
               </div>
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="fiveHundred()">
                 <h3>500g</h3>
                 <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
               </div>
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="oneThousand()">
                 <h3>1000g</h3>
                 <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
               </div>
@@ -143,15 +144,15 @@ artisan coffees from around the globe delivered fresh to your door.
           <div class="selection__type-option">
             <h2>Want us to grind them?<span><img src="/assets/plan/desktop/icon-arrow.svg" alt="Selection dropdown arrow"></span></h2>
             <div class="selection__type-cards">
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="wholeBean()">
                 <h3>Wholebean</h3>
                 <p>Best choice if you cherish the full sensory experience</p>
               </div>
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="Filter()">
                 <h3>Filter</h3>
                 <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
               </div>
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="Cafetiére()">
                 <h3>Cafetiére</h3>
                 <p>Course ground beans specially suited for french press coffee</p>
               </div>
@@ -163,15 +164,15 @@ artisan coffees from around the globe delivered fresh to your door.
           <div class="selection__type-option">
             <h2>How often should we deliver?<span><img src="/assets/plan/desktop/icon-arrow.svg" alt="Selection dropdown arrow"></span></h2>
             <div class="selection__type-cards">
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="everyWeek()">
                 <h3>Every week</h3>
                 <p>$14.00 per shipment. Includes free first-class shipping.</p>
               </div>
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="twoWeeks()">
                 <h3>Every 2 weeks</h3>
                 <p>$17.25 per shipment. Includes free priority shipping.</p>
               </div>
-              <div class="selection__type-card">
+              <div class="selection__type-card" onclick="everyMonth()">
                 <h3>Every month</h3>
                 <p>$22.50 per shipment. Includes free priority shipping.</p>
               </div>
@@ -179,8 +180,6 @@ artisan coffees from around the globe delivered fresh to your door.
           </div>
         </div>
       </div>
-
-
     </section>
   
 
@@ -188,8 +187,8 @@ artisan coffees from around the globe delivered fresh to your door.
       <div class="plan__order-summary-section container">
           <div class="plan__order-summary">
             <h4>Order Summary</h4>
-            <p>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
-                sent to me _____.”</p>
+            <p>“I drink coffee as <span id="howDoYouDrink"></span>, with a <span id="whatTypeOfCoffee"></span> type of bean. <span id="howMuchGrounds"></span> ground ala <span id="grindStyle"></span>, 
+                sent to me <span id="howOften"></span>.”</p>
           </div>
       </div>
       <div class="plan__order-summary-button container">
