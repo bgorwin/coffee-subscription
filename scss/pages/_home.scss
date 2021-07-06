@@ -69,12 +69,16 @@
 				position: relative;
 				top: 65px;
 				left: 0;
-				font-size: 14px;
-				color: $text-color-white;
+
 				background-color: $button-primary;
 				padding: 15px 40px;
 				border-radius: 6px;
 				border: none;
+
+				a {
+					font-size: 16px;
+					color: $text-color-white;
+				}
 			}
 		}
 	}
@@ -297,13 +301,16 @@
 		position: relative;
 		top: 65px;
 		left: 15px;
-		font-size: 14px;
-		color: $text-color-white;
 		background-color: $button-secondary;
 		padding: 15px 40px;
 		border-radius: 6px;
 		border: none;
 		margin-bottom: 200px;
+
+		a {
+			font-size: 16px;
+			color: $text-color-white;
+		}
 	}
 
 	.how__it-works {
