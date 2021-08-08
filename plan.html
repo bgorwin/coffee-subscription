@@ -1,28 +1,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="./js/planOrderSummary.js"></script>
-
+  
+  <link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="./assets/favicon-32x32.png"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/style.css" />
+<script src="./js/planOrderSummary.js"></script>
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
 
 <body>
 		<header class="showcase">
       <div class="container">
-        <nav>
-          <img
-            src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/logo.svg"
-            alt="coffeeroasters logo" 
-          />
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About us</a></li>
-            <li><a href="/plan.html">Create your plan</a></li>
-          </ul>
-        </nav>
+          <nav class="nav">
+              <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+              <label for="nav__checkbox" class="nav__toggle">
+                <img
+                  src="/assets/shared/mobile/icon-hamburger.svg"
+                  alt="Menu navigation icon mobile"
+                  id="menu-hamburger"
+                />
+                <img
+                  src="/assets/shared/mobile/icon-close.svg"
+                  alt="Close x icon for mobile navigation"
+                  id="menu-close"
+                />
+              </label>
+    
+              <ul class="nav__menu">
+                <li>
+                  <a href="/index.html">
+                    <img
+                      src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/logo.svg"
+                      alt="coffeeroasters logo"
+                  /></a>
+                </li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About us</a></li>
+                <li><a href="/plan.html">Create your plan</a></li>
+              </ul>
+          </nav>
 
         <div class="header__plan container">
           <div class="header__plan--mainText">

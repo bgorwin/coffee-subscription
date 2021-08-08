@@ -4,24 +4,47 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="./js/planOrderSummary.js"></script>
+
 		<title>Frontend Mentor | Coffeeroasters subscription site</title>
 	</head>
 	<body>
 		<header class="showcase">
 			<div class="container">
-				<nav>
-					<img
-						src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/logo.svg"
-						alt="coffeeroasters logo"
-					/>
-					<ul>
+				<nav class="nav">
+					<input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+					<label for="nav__checkbox" class="nav__toggle">
+						<img
+							src="/assets/shared/mobile/icon-hamburger.svg"
+							alt="Menu navigation icon mobile"
+							id="menu-hamburger"
+						/>
+						<img
+							src="/assets/shared/mobile/icon-close.svg"
+							alt="Close x icon for mobile navigation"
+							id="menu-close"
+						/>
+					</label>
+
+					<ul class="nav__menu">
+						<li>
+							<a href="/index.html">
+								<img
+									src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/logo.svg"
+									alt="coffeeroasters logo"
+							/></a>
+						</li>
 						<li><a href="/index.html">Home</a></li>
 						<li><a href="/about.html">About us</a></li>
 						<li><a href="/plan.html">Create your plan</a></li>
@@ -43,6 +66,45 @@
 				</div>
 			</div>
 		</header>
+
+		<!-- <header class="showcase">
+				<div class="container">
+					<nav>
+						<a href="/index.html">
+							<img
+								src="https://bgorwin.github.io/coffee-subscription/assets/shared/desktop/logo.svg"
+								alt="coffeeroasters logo"
+							/>
+						</a>
+	
+						<ul class="nav-links">
+							<li><a href="/index.html">Home</a></li>
+							<li><a href="/about.html">About us</a></li>
+							<li><a href="/plan.html">Create your plan</a></li>
+						</ul>
+	
+						<img
+							src="/assets/shared/mobile/icon-hamburger.svg"
+							alt="Menu navigation icon mobile"
+							id="menu-hamburger"
+						/>
+					</nav>
+	
+					<div class="header__hero container">
+						<div class="header__hero--mainText">
+							<h1>Great coffee made simple.</h1>
+							<p>
+								Start your mornings with the world’s best coffees. Try our
+								expertly curated artisan coffees from our best roasters delivered
+								directly to your door, at your schedule.
+							</p>
+							<button class="header__hero--button">
+								<a href="/plan.html">Create your plan</a>
+							</button>
+						</div>
+					</div>
+				</div>
+		</header> -->
 
 		<section class="our__collection container">
 			<div class="our__collection--title">

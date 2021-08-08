@@ -1,4 +1,5 @@
 @import '../abstracts/utilities';
+@import '../components/nav';
 @import '../components/footer';
 @import '../components/button';
 
@@ -6,30 +7,6 @@
 	height: 600px;
 	width: auto;
 	margin-bottom: 30px;
-
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin: 15px 0;
-
-		ul {
-			display: flex;
-			list-style-type: none;
-		}
-
-		li {
-			padding: 10px;
-		}
-
-		a {
-			color: $text-color-light;
-		}
-
-		a:hover {
-			color: black;
-		}
-	}
 
 	.header__plan {
 		position: relative;
